@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>School News</title>
+    <style>
+      html {
+        background-color: yellow;
+      }
+      header {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>School News</h1>
+    </header>
+    {% if messages %} {% for message in messages %}
+    <div>
+      <h2>{{message.title}}</h2>
+      <p><i>by {{message.author}}, {{message.authorDate}}</i></p>
+      <p>{{message.body}}</p>
+    </div>
+    {% endfor %} {% endif %}
+  </body>
+</html>
