@@ -15,7 +15,7 @@
     <header>
       <h1>School News</h1>
     </header>
-    {% if messages %} {% for message in messages %}
+    {% if messageList %} {% for message in messageList %}
     <div>
       <h2>{{message.title}}</h2>
       <p><i>by {{message.author}}, {{message.authorDate}}</i></p>
